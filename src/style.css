@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-2xlg: 75rem;
+  --color-grey: oklch(97.315% 0.00011 271.152);
+  --color-button: oklch(55.843% 0.24131 263.9);
+}
+
+@utility grid-cols-size {
+  grid-template-columns: 18.75rem minmax(0, 1fr) 18.75rem;
+}
+
+@utility grid-cols-autofit {
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+}
+
+@layer components {
+  .nav-hover {
+    @apply hover:bg-gray-200/80 p-1 px-2 rounded-sm duration-200 ease-in;
+  }
+  .icon {
+    @apply w-8 p-1.5 hover:bg-gray-200/40 rounded-sm duration-200 ease-in cursor-pointer;
+  }
+  .icon-2 {
+    @apply w-6 hover:bg-gray-200/40 rounded-sm duration-200 ease-in cursor-pointer;
+  }
+  .span {
+    @apply border-r border-r-gray-600/40 my-1.5 mx-2;
+  }
+
+
+}
+
+/* body {
+  --color-button: oklch(55.843% 0.24131 263.9);
+} */
