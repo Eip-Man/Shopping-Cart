@@ -1,3 +1,5 @@
+Live Demo: https://6a1fac34c082dcdd8630ad21--lucent-clafoutis-093d70.netlify.app/
+
 I started this project by sketching ideas, looking at two different designs, and combining what I liked from each into my own version.
 
 The result is a fully functional shopping cart that dynamically displays products, lets users adjust quantities, and automatically updates the order total based on their selections.
