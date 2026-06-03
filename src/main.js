@@ -6,7 +6,7 @@ const products = [
     name: "Samsung Galaxy S23 Ultra S918B/DS 256GB",
     price: 1049.99,
     quantity: 1,
-    src: "/public/assets/samsunggalaxys23ultralavender.webp",
+    src: "/assets/samsunggalaxys23ultralavender.webp",
     alt: "Samsung Galaxy s23 Ultra 256GB",
   },
 
@@ -15,7 +15,7 @@ const products = [
     name: "JBL Charge 3 Waterproof Portable Bluetooth Speaker",
     price: 109.99,
     quantity: 1,
-    src: "/public/assets/JBLCharge3HeroCamoX11605x1605px.webp",
+    src: "/assets/JBLCharge3HeroCamoX11605x1605px.webp",
     alt: "JBL Charge 3 Waterproof Portable Bluetooth Speaker",
   },
   {
@@ -23,7 +23,7 @@ const products = [
     name: "GARMIN Fenix 7X 010-02541-11 Exclusive Version",
     price: 349.99,
     quantity: 1,
-    src: "/public/assets/Fenix81.png",
+    src: "/assets/Fenix81.png",
     alt: "Garmin Fenix Exclusive Version",
   },
   {
@@ -31,7 +31,7 @@ const products = [
     name: "Beats Fit Pro - True Wireless Wireless Earbuds",
     price: 199.99,
     quantity: 1,
-    src: "/public/assets/Grayherozoom.webp",
+    src: "/assets/Grayherozoom.webp",
     alt: "Beats fit pro",
   },
   {
@@ -39,7 +39,7 @@ const products = [
     name: "JLab Epic Air Sport ANC True Wireless Earbuds",
     price: 99.99,
     quantity: 1,
-    src: "/public/assets/jlab.webp",
+    src: "/assets/jlab.webp",
     alt: "JLab Epic Air Sport ANC True Wireless Earbuds",
   },
 ];
@@ -220,7 +220,7 @@ const divContainer = (nme, prc, qty, img, alte, id) => {
     "active:w-5",
     "focus:outline-2",
   );
-  imgStyle.src = "/public/assets/trash-svgrepo-com.svg";
+  imgStyle.src = "/assets/trash-svgrepo-com.svg";
   imgStyle.alt = "trash icon";
 };
 
