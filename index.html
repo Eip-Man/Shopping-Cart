@@ -5,15 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shopping-cart</title>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/main.js" defer></script>
   </head>
-  <body class="min-w-55 max-w-330 xl:max-w-380 mx-auto bg-gray-300/50">
+  <body class="min-w-60 max-w-330 xl:max-w-380 mx-auto bg-gray-300/50">
     <!-- CONTAINER -->
     <div
-      class="flex flex-col rounded-xl bg-grey inset-ring-gray-200 2xlg:grid 2xlg:grid-cols-[900px_minmax(120px,1fr)] gap-6 md:mx-5"
+      class="flex flex-col rounded-xl bg-grey inset-ring-gray-200 2xlg:grid 2xlg:grid-cols-[900px_minmax(120px,1fr)] gap-6 md:mx-5 min-w-85"
     >
       <!-- NAV CONTAINER -->
-      <div class="flex p-5 rounded-t-xl bg-white w-full col-1 -col-end-1">
+      <div class="flex p-5 rounded-t-xl bg-white w-full col-1 -col-end-1 min-w-60">
         <header class="flex grow">
           <!-- LOGO -->
           <div class="flex grow">
@@ -80,7 +80,8 @@
 
       <!-- START SHOPPING CART CONTAINER -->
       <section
-        class="mx-3 px-5 rounded-xl 2xlg:col-1 2xlg:ml-20 bg-white lg:mb-20"
+        id="htmlContainer"
+        class="mx-3 px-5 rounded-xl 2xlg:col-1 2xlg:ml-20 bg-white lg:mb-20 min-w-60"
       >
         <h2 class="font-semibold text-2xl ml-3 p-3 rounded-t-2xl">
           Shopping Cart
@@ -94,303 +95,48 @@
           <p class="hidden md:block md:text-center md:col-4">Quantity</p>
           <p class="hidden md:block md:mx-auto">Price</p>
         </div>
-        <!-- PRODUCT 1 START CONTAINER -->
-        <div
-          class="outline-2 outline-gray-400/20 rounded-xl py-2 px-2 mx-1.5 mb-4.5 md:grid md:grid-cols-2"
-        >
-          <div class="md:flex mx-1.5 md:my-1.5">
-            <div class="rounded-md md:px-4 md:my-auto md:bg-gray-400/10 w-fit">
-              <img
-                class="w-17 mb-2 md:w-15"
-                src="./src/assets/samsunggalaxys23ultralavender.webp"
-                alt="Samsung Galaxy s23 Ultra 256GB"
-              />
-            </div>
-            <div class="md:pl-3 text-[15px]/5 mr-2.5 text-pretty md:my-auto">
-              <p class="font-semibold">
-                Samsung Galaxy S23 Ultra S918B/DS 256GB
-              </p>
-              <div class="text-[14px] pt-0.5">
-                <span class="opacity-70 tracking-tight">Color:</span
-                ><span class="pl-1">Phantom Black</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="grid grid-cols-2 md:grid-cols-3 md:gap-x-3 mt-2 space-y-4"
-          >
-            <p class="ml-1.5 text-[14px] my-auto md:hidden">Price</p>
-            <p
-              class="font-semibold text-[18px] text-end md:text-center md:my-auto md:col-2"
-            >
-              $1049.99
-            </p>
-            <p class="ml-1.5 text-[14px] my-auto md:hidden">Quantity</p>
-            <div
-              class="flex justify-self-end h-fit px-3.5 bg-gray-400/10 rounded-md md:row-1 md:m-auto"
-            >
-              <div class="flex space-x-3">
-                <p class="cursor-pointer">-</p>
-                <span class="span"></span>
-                <p class="font-semibold">1</p>
-                <span class="span"></span>
-                <p class="cursor-pointer">+</p>
-              </div>
-            </div>
-            <img
-              class="hidden m-auto w-4 opacity-30 cursor-pointer duration-150 ease-in-out md:block active:w-5 focus:outline-2"
-              src="./src/assets/trash-svgrepo-com.svg"
-              alt="trash icon"
-            />
-          </div>
-        </div>
-        <!-- PRODUCT 1 END -->
-        <!-- PRODUCT 2 START CONTAINER -->
-        <div
-          class="outline-2 outline-gray-400/20 rounded-xl py-2 px-2 mx-1.5 mb-4.5 md:grid md:grid-cols-2"
-        >
-          <div class="md:flex mx-1.5 md:my-1.5">
-            <div class="rounded-md md:px-4 md:my-auto md:bg-gray-400/10 w-fit">
-              <img
-                class="h-19 w-20 mb-2 md:h-17 md:w-20 object-cover"
-                src="./src/assets/JBLCharge3HeroCamoX11605x1605px.webp"
-                alt="JBL Charge 3 Waterproof
-                Portable Bluetooth Speaker"
-              />
-            </div>
-            <div class="md:pl-3 text-[15px]/5 mr-2.5 text-pretty md:my-auto">
-              <p class="font-semibold">
-                JBL Charge 3 Waterproof Portable Bluetooth Speaker
-              </p>
-              <div class="text-[14px] pt-0.5">
-                <span class="opacity-70 tracking-tight">Color:</span
-                ><span class="pl-1">Black</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="grid grid-cols-2 md:grid-cols-3 md:gap-x-3 mt-2 space-y-4"
-          >
-            <p class="ml-1.5 text-[14px] my-auto md:hidden">Price</p>
-            <p
-              class="font-semibold text-[18px] text-end md:text-center md:my-auto md:col-2"
-            >
-              $109.99
-            </p>
-            <p class="ml-1.5 text-[14px] my-auto md:hidden">Quantity</p>
-            <div
-              class="flex justify-self-end h-fit px-3.5 md:bg-gray-400/10 rounded-md md:row-1 md:m-auto"
-            >
-              <div class="flex space-x-3">
-                <p class="cursor-pointer">-</p>
-                <span class="span"></span>
-                <p class="font-semibold">1</p>
-                <span class="span"></span>
-                <p class="cursor-pointer">+</p>
-              </div>
-            </div>
-            <img
-              class="hidden m-auto w-4 opacity-30 cursor-pointer duration-150 ease-in-out md:block active:w-5 focus:outline-2"
-              src="./src/assets/trash-svgrepo-com.svg"
-              alt="trash icon"
-            />
-          </div>
-        </div>
-        <!-- PRODUCT 2 END CONTAINER -->
-        <!-- PRODUCT 3 START CONTAINER -->
-        <div
-          class="outline-2 outline-gray-400/20 rounded-xl py-2 px-2 mx-1.5 mb-4.5 md:grid md:grid-cols-2"
-        >
-          <div class="md:flex mx-1.5 md:my-1.5">
-            <div
-              class="rounded-md md:px-4 md:my-auto bg-gray-400/10 w-fit py-2"
-            >
-              <img
-                class="w-12 mb-2 md:w-15 md:h-13 object-cover"
-                src="./src/assets/Fenix81.png"
-                alt="Garmin Fenix Exclusive Version"
-              />
-            </div>
-            <div class="md:pl-3 text-[15px]/5 mr-2.5 text-pretty md:my-auto">
-              <p class="font-semibold">
-                GARMIN Fenix 7X 010-02541-11 Exclusive Version
-              </p>
-              <div class="text-[14px] pt-0.5">
-                <span class="opacity-70 tracking-tight">Color:</span
-                ><span class="pl-1">Black</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="grid grid-cols-2 md:grid-cols-3 md:gap-x-3 mt-2 space-y-4"
-          >
-            <p class="ml-1.5 text-[14px] my-auto md:hidden">Price</p>
-            <p
-              class="font-semibold text-[18px] text-end md:text-center md:my-auto md:col-2"
-            >
-              $349.99
-            </p>
-            <p class="ml-1.5 text-[14px] my-auto md:hidden">Quantity</p>
-            <div
-              class="flex justify-self-end h-fit px-3.5 bg-gray-400/10 rounded-md md:row-1 md:m-auto"
-            >
-              <div class="flex space-x-3">
-                <p class="cursor-pointer">-</p>
-                <span class="span"></span>
-                <p class="font-semibold">1</p>
-                <span class="span"></span>
-                <p class="cursor-pointer">+</p>
-              </div>
-            </div>
-            <img
-              class="hidden m-auto w-4 opacity-30 cursor-pointer duration-150 ease-in-out md:block active:w-5 focus:outline-2"
-              src="./src/assets/trash-svgrepo-com.svg"
-              alt="trash icon"
-            />
-          </div>
-        </div>
-        <!-- PRODUCT 3 END CONTAINER  -->
-        <!-- PRODUCT 4 START CONTAINER -->
-        <div
-          class="outline-2 outline-gray-400/20 rounded-xl py-2 px-2 mx-1.5 mb-4.5 md:grid md:grid-cols-2"
-        >
-          <div class="md:flex mx-1.5 md:my-1.5">
-            <div class="rounded-md md:px-4 md:my-auto md:bg-gray-400/10 w-fit">
-              <img
-                class="w-12 mb-2 md:w-14"
-                src="./src/assets/Grayherozoom.webp"
-                alt="Beats fit pro"
-              />
-            </div>
-            <div class="md:pl-3 text-[15px]/5 mr-2.5 text-pretty md:my-auto">
-              <p class="font-semibold">
-                Beats Fit Pro - True Wireless Wireless Earbuds
-              </p>
-              <div class="text-[14px] pt-0.5">
-                <span class="opacity-70 tracking-tight">Color:</span
-                ><span class="pl-1">Phantom Black</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="grid grid-cols-2 md:grid-cols-3 md:gap-x-3 mt-2 space-y-4"
-          >
-            <p class="ml-1.5 text-[14px] my-auto md:hidden">Price</p>
-            <p
-              class="font-semibold text-[18px] text-end md:text-center md:my-auto md:col-2"
-            >
-              $199.99
-            </p>
-            <p class="ml-1.5 text-[14px] my-auto md:hidden">Quantity</p>
-            <div
-              class="flex justify-self-end h-fit px-3.5 bg-gray-400/10 rounded-md md:row-1 md:m-auto"
-            >
-              <div class="flex space-x-3">
-                <p class="cursor-pointer">-</p>
-                <span class="span"></span>
-                <p class="font-semibold">1</p>
-                <span class="span"></span>
-                <p class="cursor-pointer">+</p>
-              </div>
-            </div>
-            <img
-              class="hidden m-auto w-4 opacity-30 cursor-pointer duration-150 ease-in-out md:block active:w-5 focus:outline-2"
-              src="./src/assets/trash-svgrepo-com.svg"
-              alt="trash icon"
-            />
-          </div>
-        </div>
-        <!-- PRODUCT 4 END CONTAINER -->
-        <!-- PRODUCT 5 START CONTAINER -->
-        <div
-          class="outline-2 outline-gray-400/20 rounded-xl py-2 px-2 mx-1.5 mb-4.5 md:grid md:grid-cols-2"
-        >
-          <div class="md:flex mx-1.5 md:my-1.5">
-            <div class="rounded-md md:px-4 md:my-auto md:bg-gray-400/10 py-2">
-              <img
-                class="w-12 mb-2 md:h-13 object-cover"
-                src="./src/assets/jlab.webp"
-                alt="JLab Epic Air Sport ANC
-                True Wireless Earbuds"
-              />
-            </div>
-            <div class="md:pl-3 text-[15px]/5 mr-2.5 text-pretty md:my-auto">
-              <p class="font-semibold">
-                JLab Epic Air Sport ANC True Wireless Earbuds
-              </p>
-              <div class="text-[14px] pt-0.5">
-                <span class="opacity-70 tracking-tight">Color:</span
-                ><span class="pl-1">Black</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="grid grid-cols-2 md:grid-cols-3 md:gap-x-3 mt-2 space-y-4"
-          >
-            <p class="ml-1.5 text-[14px] my-auto md:hidden">Price</p>
-            <p
-              class="font-semibold text-[18px] text-end md:text-center md:my-auto md:col-2"
-            >
-              $99.99
-            </p>
-            <p class="ml-1.5 text-[14px] my-auto md:hidden">Quantity</p>
-            <div
-              class="flex justify-self-end h-fit px-3.5 bg-gray-400/10 rounded-md md:row-1 md:m-auto"
-            >
-              <div class="flex space-x-3">
-                <p class="cursor-pointer">-</p>
-                <span class="span"></span>
-                <p class="font-semibold">1</p>
-                <span class="span"></span>
-                <p class="cursor-pointer">+</p>
-              </div>
-            </div>
-            <img
-              class="hidden m-auto w-4 opacity-30 cursor-pointer duration-150 ease-in-out md:block active:w-5 focus:outline-2"
-              src="./src/assets/trash-svgrepo-com.svg"
-              alt="trash icon"
-            />
-          </div>
-        </div>
-        <!-- PRODUCT 5 END CONTAINER -->
-        <aside class="flex gap-6 my-6 ml-6 w-fit">
-          <p class="p-3 font-medium tracking-wide">Back</p>
-          <button
-            class="bg-red-600 text-white py-3 px-8 text-center rounded-md text-[15px] tracking-wider hover:bg-red-700 duration-75 ease-in cursor-pointer"
-          >
-            Cancel Order
-          </button>
-        </aside>
       </section>
       <!-- END SHOPPING CART CONTAINER -->
+
       <!-- ORDER SUMMARY SECTION -->
-      <section class="bg-white rounded-xl mx-5 px-5 h-fit lg:mr-20">
+      <section class="bg-white rounded-xl mx-5 px-5 h-fit lg:mr-20 min-w-60">
         <h3 class="font-semibold text-2xl ml-3 p-3 rounded-t-2xl">
           Order Summary
         </h3>
         <span class="flex border opacity-5 mx-2"></span>
         <div class="p-2 grid grid-cols-2 gap-2 my-auto">
           <p class="opacity-70">Subtotal</p>
-          <p class="text-end">$</p>
-          <p class="opacity-70">Discount</p>
-          <p class="text-end">$</p>
-          <p class="opacity-70">Tax</p>
-          <p class="text-end">$</p>
+          <p id="subPrice" class="text-end">$1,809.95</p>
+          <p class="opacity-70">Discount (10%)</p>
+          <p id="discount" class="text-end">-$181.00</p>
+          <p class="opacity-70">Tax (7%)</p>
+          <p id="tax" class="text-end">$1,266.96</p>
         </div>
         <span class="flex border opacity-5 mx-2 my-4"></span>
         <div class="flex justify-between">
           <p class="text-xl font-semibold">Total</p>
-          <p class="my-auto text-xl font-medium">$</p>
+          <p id="overall-total" class="my-auto text-xl font-medium">
+            $2,895.82
+          </p>
         </div>
         <div class="flex mx-auto text-white text-[15px] tracking-wider">
           <button
+            type="button"
             class="mx-auto my-15 py-3 px-8 w-full rounded-md duration-75 ease-in cursor-pointer bg-black hover:bg-black/95 focus:outline-1 focus:outline-black focus:outline-offset-2 md:max-xl:max-w-80"
           >
             Process Order
           </button>
         </div>
       </section>
+      <aside id="aside" class="flex gap-6 my-6 ml-6 w-fit">
+          <p class="p-3 font-medium tracking-wide">Back</p>
+          <button
+            type="button"
+            class="bg-red-600 text-white py-3 px-8 text-center rounded-md text-[15px] tracking-wider hover:bg-red-700 duration-75 ease-in cursor-pointer min-w-10"
+          >
+            Cancel Order
+          </button>
+        </aside>
     </div>
   </body>
 </html>
-<!-- ALL DONE SIGHHHHHHHHHHHH GG EMMANUEL!! GG TO US ALL. TRULY WELL DONE!!! PAT YOURSELF ON THE BACK! THEN ITS JAVASCRIPT :) -->
